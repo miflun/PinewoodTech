@@ -1,0 +1,26 @@
+﻿@page
+@model PinewoodTech.WebApp.Pages.Customer.EditModel
+
+<form method="post">
+    <input hidden asp-for="CustomerModel.Id" />
+    <input hidden asp-for="CustomerModel.CreatedOn" />
+    <div class="border p-3 mt-4" style="width:50%">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3">Edit Customer</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="CustomerModel.FirstName" class="h5"></label><br />
+            @* Render the current name in an editable text box. *@
+            <input type="text" asp-for="CustomerModel.FirstName" />
+            <span asp-validation-for="CustomerModel.FirstName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="CustomerModel.Age" class="h5"></label><br />
+            <input type="number" asp-for="CustomerModel.Age" />
+        </div>
+        @* Submit the changes or return to the Index page if the edit is cancelled.*@
+        <button type="submit" class="btn btn-primary" style="width:150px;">Update</button>
+        <a asp-page="Index" class="btn btn-secondary" style="width:150px;">Cancel</a>
+    </div>
+</form>

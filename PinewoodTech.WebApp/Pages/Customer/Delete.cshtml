@@ -1,0 +1,24 @@
+﻿@page
+@model PinewoodTech.WebApp.Pages.Customer.DeleteModel
+
+<form method="post">
+    <input hidden asp-for="CustomerModel.Id" />
+    <div class="border p-3 mt-4" style="width:50%">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3">Delete Customer</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="CustomerModel.FirstName" class="h5"></label><br />
+            @* Render the name in a non-editable text box. *@
+            <input type="text" asp-for="CustomerModel.FirstName" disabled />
+        </div>
+        <div class="mb-3">
+            <label asp-for="CustomerModel.Age" class="h5"></label><br />
+            <input type="text" asp-for="CustomerModel.Age" disabled />
+        </div>
+        @* Submit the changes or return to the Index page if the delete is cancelled.*@
+        <button type="submit" class="btn btn-danger " style="width:150px;">Delete</button>
+        <a asp-page="Index" class="btn btn-secondary" style="width:150px;">Cancel</a>
+    </div>
+</form>
