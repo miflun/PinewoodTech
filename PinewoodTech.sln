@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PinewoodTech.WebApi.Test", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PinewoodTech.WebApp", "PinewoodTech.WebApp\PinewoodTech.WebApp.csproj", "{B568C3EC-0E78-4831-8E70-3B830653B1F7}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "pinewoodtech.reactapp", "PinewoodTech.ReactApp\pinewoodtech.reactapp.esproj", "{31F6AA53-E228-435D-BE3C-FBF75BCEA13B}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "PinewoodTech.ReactApp", "PinewoodTech.ReactApp\PinewoodTech.ReactApp.esproj", "{31F6AA53-E228-435D-BE3C-FBF75BCEA13B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
